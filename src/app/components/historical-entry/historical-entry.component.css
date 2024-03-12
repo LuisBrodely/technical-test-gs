@@ -1,0 +1,30 @@
+.card {
+  width: 100%;
+  background-color: var(--color-secondary-background);
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.card__label--input {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-subtitle);
+}
+
+.card__value--input {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-subtitle);
+}
+
+.card__label--output {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  color: var(--color-purple);
+}
+
+.card__value--output {
+  font-size: 40px;
+  font-weight: 600;
+}

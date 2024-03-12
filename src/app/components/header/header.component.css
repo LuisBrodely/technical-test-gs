@@ -1,0 +1,23 @@
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 54px;
+  text-align: center;
+  width: 635px;
+}
+
+.title-purple {
+  color: var(--color-purple);
+}
+
+.title-blue {
+  color: var(--color-blue);
+}
+
+.title-skyblue {
+  color: var(--color-skyblue);
+}

@@ -1,0 +1,11 @@
+<div class="container__custom--input">
+  <div class="flex gap-20 items-center justify-center ">
+    <input type="text" [(ngModel)]="romanNumber" name="romanNumber" placeholder="Entrada de datos" class="custom-input"/>
+    <button (click)="convertToDecimal()" class="custom-button">Enviar</button>
+  </div>
+  <p class="error-message">{{ errorMessage ? 'Error: ' + errorMessage : '' }}</p>
+</div>
+
+<div class="custom-grid">
+  <app-historical-entry *ngFor="let entry of historicalEntries" [entry]="entry"></app-historical-entry>
+</div>
