@@ -10,13 +10,15 @@ export class RomanNumeralService {
   constructor() { }
 
   romanToDecimal(romanNumber: string): number {
+    romanNumber = romanNumber.trim();
+
     if (!romanNumber) {
       throw new Error('Por favor, ingresa un número romano.');
     }
 
     const validRomanRegex = /^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
     if (!validRomanRegex.test(romanNumber)) {
-      throw new Error('El número romano ingresado contiene caracteres inválidos.');
+      throw new Error('Introduce un número romano válido entre el 1 al 3999');
     }
 
     const romanNumerals: { [key: string]: number } = {
