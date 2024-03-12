@@ -10,7 +10,7 @@ export class RomanNumeralService {
   constructor() { }
 
   romanToDecimal(romanNumber: string): number {
-    romanNumber = romanNumber.trim();
+    romanNumber = romanNumber.trim().toUpperCase();
 
     if (!romanNumber) {
       throw new Error('Por favor, ingresa un número romano.');
