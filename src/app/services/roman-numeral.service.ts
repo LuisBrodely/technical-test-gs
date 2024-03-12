@@ -14,7 +14,7 @@ export class RomanNumeralService {
       throw new Error('Por favor, ingresa un número romano.');
     }
 
-    const validRomanRegex = /^[IVXLCDM]+$/;
+    const validRomanRegex = /^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
     if (!validRomanRegex.test(romanNumber)) {
       throw new Error('El número romano ingresado contiene caracteres inválidos.');
     }
